@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Приклади робіт</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img class="logo" src="log.png" alt="Логотип ВмятинОфф">
+            <h1>СТО "Приклади робіт"</h1>
+        </div>
+        <div class="menu20">
+            <a href="./index.html">Головна</a>
+            <a href="./services.html">Вартість</a>
+            <a href="./examples.html">Приклади робіт</a>
+            <a href="./map.html">Розташування</a>
+        </div>
+    </header>
+
+    <div class="main">
+        <div id="infoblock3">
+
+            <h3>Натискайте на фото та дивіться, як відбувається процес відновлення авто</h3>
+            <div class="pos">
+                <img src="map-auto.png" usemap="#map">
+                <map name="map">
+                    <area shape="rect" coords="0,0, 637,356"
+                          href="https://youtu.be/TQEpiKzUDMA?feature=shared">
+                    <area shape="rect" coords="0,355, 637,714"
+                          href="https://youtu.be/rIn6sHe9mS8?feature=shared">
+                    <area shape="rect" coords="637,0, 1272,356"
+                          href="https://youtu.be/Vn6KBBe-3FM?feature=shared">
+                    <area shape="rect" coords="637,356, 1273,715"
+                          href="https://youtu.be/XdjntH9rBfA?feature=shared">
+                </map>
+            </div>
+
+        </div>
+
+
+        <div id="rightblock3">
+
+            <p> <b>Результат роботи у вигляді</b> <span class="texboll"> до/після</span> </p>
+            <img src=" prik.png" alt="Авто до">
+            <img src=" prikl.png" alt="Авто після">
+            <a href="https://www.google.com/search?q=%D0%BF%D0%BE%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0+%D0%B0%D0%B2%D1%82%D0%BE+%D0%B4%D0%BE+%D0%B8+%D0%BF%D0%BE%D1%81%D0%BB%D0%B5&udm=2&sa=X&ved=2ahUKEwjGmOy81oqGAxXNJhAIHWDDDOgQrNwCegQIbhAA&biw=1920&bih=911&dpr=1" class="morephotos">Більше фото</a>
+        </div>
+    </div>
+
+    <div class="sub-blocks1">
+
+        <script type="text/javascript" language="JavaScript">
+            // <![CDATA[
+            var res = "23121";
+            function check_me() {
+                var count = 0;
+                with (document.test) {
+                    if (!Q1[0].checked && !Q1[1].checked && !Q1[2].checked) { count += 1 };
+                    if (!Q2[0].checked && !Q2[1].checked && !Q2[2].checked) { count += 1 };
+                    if (!Q3[0].checked && !Q3[1].checked && !Q3[2].checked) { count += 1 };
+                    if (!Q4[0].checked && !Q4[1].checked && !Q4[2].checked) { count += 1 };
+                    if (!Q5[0].checked && !Q5[1].checked && !Q5[2].checked) { count += 1 };
+                    if (count > 0) alert("Ви виконали не всі завдання. Перевірте себе!")
+                    else answer();
+                }
+            }
+
+            function control(k, f1, f2, f3, f4, f5) {
+                if (k == 1 && f1.checked) return true;
+                if (k == 2 && f2.checked) return true;
+                if (k == 3 && f3.checked) return true;
+                if (k == 4 && f4.checked) return true;
+                if (k == 5 && f5.checked) return true;
+                return false;
+            }
+
+            function answer() {
+                answ = "";
+                with (document) {
+                    answ += control(res.charAt(0), test.Q1[0], test.Q1[1], test.Q1[2]) ? "1" : "0";
+                    answ += control(res.charAt(1), test.Q2[0], test.Q2[1], test.Q2[2]) ? "1" : "0";
+                    answ += control(res.charAt(2), test.Q3[0], test.Q3[1], test.Q3[2]) ? "1" : "0";
+                    answ += control(res.charAt(3), test.Q4[0], test.Q4[1], test.Q4[2]) ? "1" : "0";
+                    answ += control(res.charAt(4), test.Q5[0], test.Q5[1], test.Q5[2]) ? "1" : "0";
+
+                    showResult();
+                }
+            }
+
+            function showResult() {
+                var nok = 0;
+                var i, s;
+
+                for (i = 0; i < answ.length; i++) { nok += answ.charAt(i) === "1" ? 1 : 0; }
+                if (nok === 5) s = "ВІДМІННО";
+                if (nok < 5) s = "ДОБРЕ";
+                if (nok < 3.75) s = "ЗАДОВІЛЬНО";
+                if (nok < 2.5) s = "НЕЗАДОВІЛЬНО";
+                document.test.s1.
+                    value = "Кількість правильних відповідей " + nok + ". Ваша оцінка " + s + " . Подивіться на вікно поруч із номером питання. Якщо відповідь правильна, там (+). Якщо відповідь помилкова, там (-).";
+                with (document.test) {
+                    if (answ.charAt(0) === "1") { T1.value = " + " } else { T1.value = " - " };
+                    if (answ.charAt(1) === "1") { T2.value = " + " } else { T2.value = " - " };
+                    if (answ.charAt(2) === "1") { T3.value = " + " } else { T3.value = " - " };
+                    if (answ.charAt(3) === "1") { T4.value = " + " } else { T4.value = " - " };
+                    if (answ.charAt(4) === "1") { T5.value = " + " } else { T5.value = " - " };
+                }
+            }
+            function showhide(obj) {
+                if (obj == 'none') return 'inline';
+                else return 'none';
+            }
+            // ]]>
+        </script>
+        <center><h2>Тест</h2></center><br /><br />
+        &nbsp;&nbsp;&nbsp;<span style="color:#eb6666;text-decoration:underline;cursor:pointer;" onclick="document.getElementById('instruction').style.display = showhide(document.getElementById('instruction').style.display)">
+            Інструкція
+        </span>
+        <br />
+        <div id="instruction" style="display: none; width: 100%;">
+            <ul>
+                <li>Виберіть один із варіантів у кожному з 5 питань;</li>
+                <li>Натисніть кнопку "Показати результат";</li>
+                <li>Скрипт не покаже результат, доки Ви не відповісте на всі запитання;</li>
+                <li>Завітайте у вікно поряд із номером завдання. Якщо відповідь правильна, то там (+). Якщо ви помилилися, там (-).</li>
+                <li>За кожну правильну відповідь нараховується 1 бал;</li>
+                <li>Оцінки: менше 2.5 балів - НЕЗАДОВОЛЬНО, від 2.5 але менше 3.75 - ЗАДОВОЛЬНО, 3.75 і менше 5 - ДОБРЕ, 5 - ВІДМІННО;</li>
+                <li>Щоб скинути результати тестування, натиснути кнопку "Видалити відповіді";</li>
+            </ul>
+        </div>
+        <form name="test">
+            <ol>
+                <li>
+                    <INPUT type="text" size="1" value="" name="T1" /><b> Коли було засноване наше СТО?</b><br />
+                    <input type="radio" value="0" name="Q1" /> 2007<br />
+                    <input type="radio" value="1" name="Q1" /> 2009<br />
+                    <input type="radio" value="2" name="Q1" /> 2011<br />
+                    <br />
+                </li>
+                <li>
+                    <INPUT type="text" size="1" value="" name="T2" /><b> Де виникло видалення вм'ятин без фарбування?</b><br />
+                    <input type="radio" value="0" name="Q2" /> Польша<br />
+                    <input type="radio" value="1" name="Q2" /> Латвія<br />
+                    <input type="radio" value="2" name="Q2" /> Німеччина<br />
+                    <br />
+                </li>
+                <li>
+                    <INPUT type="text" size="1" value="" name="T3" /><b> У якому столітті з'явились перші синтетичні поліролі?</b><br />
+                    <input type="radio" value="0" name="Q3" /> 19<br />
+                    <input type="radio" value="1" name="Q3" /> 17<br />
+                    <input type="radio" value="2" name="Q3" /> 20<br />
+                    <br />
+                </li>
+                <li>
+                    <INPUT type="text" size="1" value="" name="T4" /><b> Який клей використовується для видалення вмя'тин?</b><br />
+                    <input type="radio" value="0" name="Q4" /> Суперклей<br />
+                    <input type="radio" value="1" name="Q4" /> Спеціальний клей<br />
+                    <input type="radio" value="2" name="Q4" /> Епоксідний клей<br />
+                    <br />
+                </li>
+                <li>
+                    <INPUT type="text" size="1" value="" name="T5" /><b> Для чого використовується відновлювальне полірування?</b><br />
+                    <input type="radio" value="0" name="Q5" /> Для відновлення кольору та блиску лаку<br />
+                    <input type="radio" value="1" name="Q5" /> Для видалення верхнього шару лаку<br />
+                    <input type="radio" value="2" name="Q5" /> Для захиста лаку <br />
+                    <br />
+                </li>
+            </ol>
+            <CENTER>
+                <P><TEXTAREA name="s1" rows="4" cols="70" readonly> </TEXTAREA> </P>
+                <INPUT onclick="check_me()" type="button" value="Показати результати" />&nbsp;&nbsp;&nbsp;&nbsp;
+                <INPUT type="reset" value="Видалити відповіді" /> 
+            </CENTER>
+
+        </form>
+        <!-- Test created by service http://test.fromgomel.com -->
+    </div>
+   
+
+    <footer>
+        <b> Номер телефону:</b> 0000000000 <br />
+        <b> Графік роботи:</b> понеділок-п'ятниця з 9:00-18:00 <br />
+        <b>Адреса:</b> вул.Старокозацька 19, Дніпро, Дніпропетровська область<br />
+        <b>Email: </b> vmyatinoff@gmail.com<br />
+    </footer>
+</body>
+</html>

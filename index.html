@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>СТО ВмятинОфф</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img class="logo" src="log.png" alt="Логотип ВмятинОфф">
+            <h1>СТО "ВмятинОфф"</h1>
+        </div>
+        <div class="menu20">
+            <a href="./index.html">Головна</a>
+            <a href="./services.html">Вартість</a>
+            <a href="./examples.html">Приклади робіт</a>
+            <a href="./map.html">Розташування</a>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <div id="greeting"></div>
+
+        <script type="text/javascript">
+            var n1 = window.prompt("Введіть своє ім'я.", "Наприклад - Вікторія");
+            if (n1 === null || n1.trim() === "") {
+                document.getElementById("greeting").innerText = "Дія була відмінена";
+            } else {
+                var n2 = window.prompt("Введіть своє прізвище.", "Наприклад - Щеголь");
+                if (n2 === null || n2.trim() === "") {
+                    document.getElementById("greeting").innerText = "Дія була відмінена";
+                } else {
+                    var n3 = window.prompt("Що вас більше цікавить: полірування або видалення вм'ятин?", "Наприклад - полірування");
+                    if (n3 === null || n3.trim() === "") {
+                        document.getElementById("greeting").innerText = "Дія була відмінена";
+                    } else {
+                        var greeting = "Привіт, " + n1 + " " + n2 + "! Ви зможете знайти інформацію про " + n3 + ". Раді Вас бачити на нашому сайті.";
+                        document.getElementById("greeting").innerText = greeting;
+                    }
+                }
+            }
+        </script>
+        <div id="infoblock">
+            <div class="infoblock-item">
+                <p>
+                    <span class="tex">СТО ВмятинОфф</span> - це сучасний підхід до зовнішнього вигляду автівок. Команда професіoналів займається поліруванням та видаленням вм'ятин без фарбування.
+                    Наш сервіс заснован у <b>2009</b> році, за цей час багато клієнтів оцінили якість та переваги саме наших послуг з відновлення стану автівок.<br /><br />
+                    Ми надаємо такі послуги: <b>Видалення вм'ятин без фарбування</b> (градові вм'ятини, парковочні вм'ятини та вм'ятини після ДТП);
+                    <b>Полірування авто</b> (Відновлювальне полірування, захисне полірування, покриття шкіри в салоні та антидощ на всі вікна);
+                    <b> Відновлення оптики автівки</b> (Полірування фар головного світла та полірування задніх ліхтарів).
+                </p>
+            </div>
+        </div>
+
+        <div class="sub-blocks">
+            <h2>PDR (Видалення вм'ятин без фарбування)</h2>
+            <div class="flex-container">
+                <img src="вмят.jpg" alt="Авто з вмятиною" class="left-image">
+                <div class="text-block">
+                    <h3><b>Історія PDR:</b></h3>
+                    <ul>
+                        <li><t>Виникло в 50-х роках 20 століття в Німеччині.</t></li>
+                        <li><t>Спочатку використовувалося для ремонту літаків.</t></li>
+                        <li><t>У 60-х роках почало використовуватися для ремонту автомобілів.</t></li>
+                    </ul>
+                    <h3><b>Види PDR:</b></h3>
+                    <ul>
+                        <li><t>Класичний PDR: Використовуються спеціальні гачки та інструменти для витягування вм'ятини зсередини.</t></li>
+                        <li><t>Клеєвий PDR: До вм'ятини приклеюється спеціальна клейова точка, а потім за допомогою зворотного тяжіння вм'ятина вирівнюється.</t></li>
+                        <li><t>Комбінований PDR: Поєднує в собі елементи класичного та клейового PDR.</t></li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>Полірування авто</h2>
+            <div class="flex-container">
+                <div class="text-block">
+                    <h3><b>Історія полірування:</b></h3>
+                    <ul>
+                        <li><t>Виникло в давнину, коли люди використовували натуральні матеріали, такі як бджолиний віск та олію, для полірування поверхонь.</t></li>
+                        <li><t>У 19 столітті з'явилися перші синтетичні поліролі.</t></li>
+                    </ul>
+                    <h3><b>Види полірування:</b></h3>
+                    <ul>
+                        <li><t>Абразивне полірування: Використовуються абразивні частинки для видалення верхнього шару лаку та усунення дрібних подряпин та дефектів.</t></li>
+                        <li><t>Захисне полірування: Наноситься захисний шар, який захищає лак від ультрафіолетових променів, бруду та інших шкідливих впливів.</t></li>
+                        <li><t>Відновлювальне полірування: Використовується для відновлення вицвілого та потьмянілого лаку.</t></li>
+                    </ul>
+                </div>
+                <img src="полір.jpg" alt="Авто з поліруванням" class="right-image">
+            </div>
+        </div>
+        <div class="form-container">
+            <h2>Форма для введення даних</h2>
+            <form id="userForm">
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" placeholder="Ваше ім'я" required>
+
+                <label for="surname">Прізвище:</label>
+                <input type="text" id="surname" name="surname" placeholder="Ваше прізвище" required>
+
+                <label for="age">Вік:</label>
+                <input type="number" id="age" name="age" placeholder="Ваш вік" min="1" max="100" required>
+
+                <label for="phone">Номер телефону:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Введіть номер телефону (приклад: 0962315757)" pattern="[0-9]{10}" required title="Номер повинен починатись з 0 та містити 10 цифр">
+
+                <label>Послуга, яка вас цікавить:</label>
+                <div class="radio-group">
+                    <input type="radio" id="polishing" name="service" value="Полірування" required>
+                    <label for="polishing">Полірування</label>
+
+                    <input type="radio" id="dent_removal" name="service" value="Видалення вм'ятин" required>
+                    <label for="dent_removal">Видалення вм'ятин</label>
+                </div>
+
+
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree" class="checkbox-label">Я погоджуюсь з умовами</label>
+
+                <button type="submit">Відправити</button>
+            </form>
+            <div id="result" class="result" style="display:none;"></div>
+        </div>
+    </div>
+
+    <footer>
+        <b> Номер телефону:</b> 0000000000 <br />
+        <b> Графік роботи:</b> понеділок-п'ятниця з 9:00-18:00 <br />
+        <b>Адреса:</b> вул.Старокозацька 19, Дніпро, Дніпропетровська область<br />
+        <b>Email: </b> vmyatinoff@gmail.com<br />
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const textBlocks = document.querySelectorAll('.text-block');
+            textBlocks.forEach((block, index) => {
+                setTimeout(() => {
+                    block.classList.add('visible');
+                }, index * 400); 
+            });
+
+            const form = document.getElementById('userForm');
+            const result = document.getElementById('result');
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                result.style.display = 'block';
+                result.innerHTML = `
+                        <h3>Реєстрація успішна!</h3>
+                        <p>Дякуємо за реєстрацію.</p>
+                    `;
+
+                form.reset(); 
+            });
+        });
+    </script>
+</body>
+</html>

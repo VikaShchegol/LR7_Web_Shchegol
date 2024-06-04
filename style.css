@@ -1,0 +1,451 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6e0e0;
+}
+
+header {
+    background-image: url("car.png");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.container {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.logo {
+    max-width: 210px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+h1 {
+    color: #f6cfcf;
+    font-family: 'Times New Roman';
+    font-size: 500%;
+}
+
+p {
+    text-align: center;
+    color: #000;
+    line-height: 1.6;
+    font-size: 145%;
+}
+
+t {
+    text-align: center;
+    color: #000;
+    line-height: 1.2;
+    font-size: 125%;
+}
+
+.tex {
+    color: #720000;
+    font-weight: 600;
+}
+
+#infoblock {
+    width: 73%;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: space-between;
+    gap: 10px;
+}
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.left-image {
+    padding: 7px 7px;
+    max-width: 40%;
+}
+
+.right-image {
+    padding: 7px;
+    max-width: 45%; 
+}
+
+
+.text-block {
+    margin: 0 auto;
+}
+
+.sub-blocks {
+    max-width: 65%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.sub-blocks1 {
+    max-width: 65%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%; 
+    margin: 0 auto;
+}
+
+th, td {
+    border: 15px solid #ca7676;
+    text-align: center;
+    padding: 6px;
+    font-size: 19px;
+}
+
+
+
+h2 {
+    text-align: center;
+    color: #780d0d
+}
+
+h3 {
+    text-align: center;
+    color: #510909;
+}
+
+
+l {
+    text-align: center;
+    color: #510909;
+    font-size: 100%;
+}
+
+.tex.White {
+    color: #f7e0e0;
+    font-size: 100%;
+}
+
+#infoblock2 {
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#infoblock3 {
+    width: 60%;
+    padding: 20px 100px;
+    gap: 20px;
+    font-size: 20px;
+}
+
+#rightblock3 {
+    width: 25%;
+    padding: 20px 110px;
+    gap: 20px;
+    font-size: 15px;
+}
+
+h4 {
+    text-align: center;
+    color: #2636b4;
+}
+
+.texboll {
+    color: #1d2e96;
+    font-weight: 600;
+}
+
+#infoblock4 {
+    width: 65%;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: space-between;
+    padding: 10px 10px;
+    gap: 10px;
+}
+
+
+test {
+    text-align: center;
+    color: #000;
+    line-height: 1.2;
+    font-size: 11%;
+}
+
+img {
+    max-width: 100%;
+    display: block; 
+    margin: 0 auto; 
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+image {
+    max-width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.morephotos {
+    font-size: 20px;
+    background-color: #f85d5d;
+    color: #000;
+    text-decoration: none;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: max-content;
+    text-align: center;
+}
+
+    .morephotos:hover {
+        background-color: #698be9;
+        transform: scale(1.1);
+    }
+
+
+footer {
+    text-align: center;
+    background: #ac1414be;
+    text-decoration: none;
+    color: #f3e3e3;
+    font-size: 22px;
+    line-height: 1.8;
+    margin-top: 40px;
+}
+
+.menu20 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+    .menu20 a {
+        text-decoration: none;
+        color: #f1c3c3;
+        padding: 5px 15px;
+        border: 5px solid #570000b7;
+        border-radius: 7px;
+        margin-left: 10px;
+    }
+
+        .menu20 a:hover {
+            color: #510808;
+        }
+
+.googlemap {
+    width: 100%; 
+    height: 800px; 
+    margin: 0 auto; 
+    display: block;
+}
+
+.main {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #680000;
+}
+
+    .price-table th, .price-table td {
+        padding: 9px;
+        border: 1px solid #680000;
+    }
+
+    .price-table th {
+        background-color: #d16565;
+        text-align: center;
+    }
+
+form[name="test"] {
+    font-size: 18px; 
+    line-height: 1.6;
+}
+
+    form[name="test"] input[type="radio"] {
+        transform: scale(1.5); 
+        margin-right: 10px; 
+    }
+
+    form[name="test"] input[type="button"],
+    form[name="test"] input[type="reset"] {
+        font-size: 18px; 
+        padding: 10px 20px; 
+        border-radius: 10px; 
+        text-align: center; 
+        border: 1px solid #000;
+    }
+
+#greeting {
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+.converter {
+    text-align: center; 
+}
+
+    .converter label {
+        font-family: Arial, sans-serif; 
+        font-size: 19px; 
+    }
+
+    .converter input {
+        font-family: Arial, sans-serif; 
+        font-size: 16px; 
+        padding: 5px; 
+    }
+
+    .converter button {
+        font-family: Arial, sans-serif; 
+        font-size: 16px;
+        background-color: #cc3e3e; 
+        color: white; 
+        padding: 10px 20px; 
+        border: none; 
+        border-radius: 5px; 
+        cursor: pointer; 
+        margin-top: 20px; 
+    }
+
+        .converter button:hover {
+            background-color: #cc8b8b; 
+        }
+
+.text-block {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+    .text-block.visible {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+/* Стилі для форми користувача */
+.form-container {
+    width: 30%;
+    margin: 0 auto;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    font-size: 19px;
+    text-align: left;
+}
+
+    .form-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .form-container label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="number"],
+    .form-container input[type="tel"] {
+        display: block;
+        width: calc(100% - 22px); /* Враховує padding */
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .form-container .radio-group {
+        margin-bottom: 20px;
+    }
+
+        .form-container .radio-group input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .form-container .radio-group label {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+    .form-container input[type="checkbox"] {
+        margin-right: 10px;
+    }
+
+    .form-container label.checkbox-label {
+        display: inline-block;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+
+    .form-container input[type="checkbox"] {
+        display: inline-block;
+        margin-right: 5px;
+        vertical-align: middle;
+    }
+
+    .form-container button {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        background-color: #b23e3e;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 19px;
+        cursor: pointer;
+    }
+
+        .form-container button:hover {
+            background-color: #d07b7b;
+        }
+
+.result {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f6cfcf;
+    font-size: 19px;
+    text-align: center;
+}

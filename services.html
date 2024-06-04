@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Вартість</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="gpn.js" defer></script> 
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img class="logo" src="log.png" alt="Логотип ВмятинОфф">
+            <h1>Вартість</h1>
+        </div>
+        <div class="menu20">
+            <a href="./index.html">Головна</a>
+            <a href="./services.html">Вартість</a>
+            <a href="./examples.html">Приклади робіт</a>
+            <a href="./map.html">Розташування</a>
+        </div>
+    </header>
+
+    <div class="main">
+        <div id="infoblock2">
+            <h2>Вартість полірування</h2>
+            <div class="table-container">
+                <table class="price-table">
+                    <tr>
+                        <th>Послуга</th>
+                        <th>1 клас (новий / б/у)</th>
+                        <th>2 клас (новий / б/у)</th>
+                    </tr>
+                    <tr>
+                        <td>Комплекс "Преміум" (детейлінг мийка/ полірування/ кераміка 2 шари/ антидощ)</td>
+                        <td>700/900₴</td>
+                        <td>800/1000₴</td>
+                    </tr>
+                    <tr>
+                        <td>Комплекс "Преміум" (детейлінг мийка/ полірування/ кераміка 3 шари/ антидощ)</td>
+                        <td>800/1000₴</td>
+                        <td>900/1100₴</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h2>Вартість видалення вм'ятин</h2>
+            <div class="table-container">
+                <table class="price-table">
+                    <tr>
+                        <th>Види</th>
+                        <th>Ціна</th>
+                    </tr>
+                    <tr>
+                        <td>Градові вм'ятини</td>
+                        <td>від 200 грн/шт</td>
+                    </tr>
+                    <tr>
+                        <td>Парковочні вм'ятини</td>
+                        <td>від 300 грн/шт</td>
+                    </tr>
+                    <tr>
+                        <td>Вм'ятини після ДТП</td>
+                        <td>договірна</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <h2>Конвертер валют</h2>
+    <div class="converter">
+        <label for="usdAmount">Сума в доларах:</label>
+        <input type="number" id="usdAmount" step="0.01"><br><br>
+        <label for="exchangeRate">Курс обміну (гривні за долар):</label>
+        <input type="number" id="exchangeRate" step="0.01"><br><br>
+        <button onclick="rez()">Розрахувати</button><br><br>
+        <div id="uahAmount"></div>
+    </div>
+
+
+    <footer>
+        <b> Номер телефону:</b> 0000000000 <br />
+        <b> Графік роботи:</b> понеділок-п'ятниця з 9:00-18:00 <br />
+        <b>Адреса:</b> вул.Старокозацька 19, Дніпро, Дніпропетровська область<br />
+        <b>Email: </b> vmyatinoff@gmail.com<br />
+    </footer>
+</body>
+</html>
